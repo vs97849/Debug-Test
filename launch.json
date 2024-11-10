@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug (GDB/LLDB)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/SequentialFunctions", // Adjust to ${workspaceFolder}/SequentialFunctions.exe on Windows
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "Build Debug",
+            "miDebuggerPath": "gdb", // Adjust to your gdb path if using MSYS2 or MinGW on Windows
+            "logging": {
+                "engineLogging": true
+            },
+            "launchCompleteCommand": "exec-run",
+            "internalConsoleOptions": "openOnSessionStart"
+        }
+    ]
+}
