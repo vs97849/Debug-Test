@@ -1,0 +1,7 @@
+follow for installation:
+  https://code.visualstudio.com/docs/cpp/config-mingw
+
+C:\msys64\ucrt64\bin   ( for g++ , after installation )
+
+C:\Program Files (x86)\GnuWin32\bin   ( for make )
+
